@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @font-face {
     font-family: "neo";
-    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+    src: url(/NeueHaasDisplayMediu.ttf);
 }
 @theme{
     --font-neo : "neo";
