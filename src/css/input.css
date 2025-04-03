@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+@font-face {
+    font-family: "neo";
+    src: url(/src/fonts/NeueHaasDisplayMediu.ttf);
+}
+@theme{
+    --font-neo : "neo";
+}
+@layer utilities{
+    @keyframes fadeinout {
+        0%{
+            opacity: 0;
+        }30%{
+            opacity: 1;
+        }80%{opacity: 1;
+        }100%{
+            opacity: 0;
+        }
+    }
+    @keyframes load {
+        0%{
+            transform: translateY(-100%);
+        }10%{
+            transform: translateY(100%);
+
+        }90%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(-100%);
+        }
+    }
+
+}
+.animate-loader{
+    animation: load 6s ;
+}
+.animate-fadeinout{
+    animation: fadeinout 1.2s ease;
+}
+.d-1{
+    animation-delay: 1.3s;
+}
+.d-2{
+    animation-delay: 2.3s;
+}
+.d-3{
+    animation-delay: 3.3s;
+}
+.d-4{
+    animation-delay: 4.3s;
+}
+.over-flow{
+    animation: scrol 6s;
+}
