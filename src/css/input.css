@@ -30,6 +30,27 @@
             transform: translateY(-100%);
         }
     }
+    @keyframes moving {
+        from{
+            transform: translate(-5%, 10%);
+        }to{
+            transform: translate(10%, -15%);
+        }
+    }
+    @keyframes mo{
+        from{
+            transform: translate(-60%, -15%);
+        }to{
+            transform: translate(-40%, 5%);
+        } 
+    }
+    @keyframes text-scrolling {
+        0%{
+            transform: translateX(0%);
+        }100%{
+            transform: translateX(-100%);
+        }
+    }
 
 }
 .animate-loader{
@@ -52,4 +73,13 @@
 }
 .over-flow{
     animation: scrol 6s;
+}
+.animate-child{
+   animation: moving 4s infinite linear alternate;
+}
+.animate-mo{
+    animation:mo 3s infinite linear alternate;
+}
+.scrolling{
+    animation: text-scrolling 10s infinite linear;
 }
